@@ -1,0 +1,13 @@
+.body__img {
+  transition: all 1s ease-in;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+}
+
+.body__img:hover {
+  /* transform: rotate(1turn); */
+  /* transform: scale(2); */
+  transform: skew(22deg);
+}
