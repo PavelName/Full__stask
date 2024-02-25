@@ -1,13 +1,11 @@
-body{
-  background-color: bisque;
-}
-.header{
-  font: size 4px;
-  border: 5px solid red;
-}
+@import "./header";
+@import "./body";
+
+
+
 
 h1{
   font-size: 15px;
   text-align: center;
-  color:green;
+  color:red;
 }
