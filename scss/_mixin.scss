@@ -1,0 +1,7 @@
+@mixin title($_size, $_mr) {
+  font-size: $_size;
+  margin-right: $_mr ;
+}
+h1 {
+  @include title(2rem, 2rem )
+}
