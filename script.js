@@ -19,15 +19,18 @@
 //   }
 // }
 
-let num = 0;
-let age = prompt('How old are you?');
-while (true) {
-  if (age > 0 && age < 100) {
-    document.write('<h1>Hello it,s good !</h1>')
-    break;
-  } else {
-    age = prompt('inkorrect input');
-    document.write('<h1>Goodbye!</h1>');
-  }
+// let num = 0;
+// let age = prompt('How old are you?');
+// while (true) {
+//   if (age > 0 && age < 100) {
+//     document.write('<h1>Hello it,s good !</h1>')
+//     break;
+//   } else {
+//     age = prompt('inkorrect input');
+//     document.write('<h1>Goodbye!</h1>');
+//   }
 
-}
+// }
+const text = 'Never forget what you are, for surely the world will not';
+const result = `First: ${text[0]} \nLast: ${text[text.length - 1]}`
+console.log(result);
