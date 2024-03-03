@@ -1,36 +1,21 @@
+const person = {
+  firstName: 'Pavel',
+  lastName: 'Koryagin',
+  age: 47,
+  city:'Usolie-Sib',
+  married: true,
+  languages: {
+    english: 'b3',
+    franse: 'b2',
+  }
+};
 
-//const age = prompt('how areyou age?');
-
-
-//let acces = age > 10 ? 'Its good': 'Not good';
-// if (age >= 10){
-//   acces = "Its good";
-// } else {
-//   acces = "No good"
+//console.log(person.languages.franse, person.firstName);
+// for(let key in person){
+//   console.log(person[k]);
 // }
-//document.write(`<h3>${acces}</h3>`);
-
-// let num = 10;
-// while (num >= 0) {
-//   document.write(`<h4>${num}</h4>`);
-//   num --;
-//   if( num == 3) {
-//     break;
-//   }
-// }
-
-// let num = 0;
-// let age = prompt('How old are you?');
-// while (true) {
-//   if (age > 0 && age < 100) {
-//     document.write('<h1>Hello it,s good !</h1>')
-//     break;
-//   } else {
-//     age = prompt('inkorrect input');
-//     document.write('<h1>Goodbye!</h1>');
-//   }
-
-// }
-const text = 'Never forget what you are, for surely the world will not';
-const result = `First: ${text[0]} \nLast: ${text[text.length - 1]}`
-console.log(result);
+const array = [1, 3, 6, 31, 89];
+for (let num of array){
+  console.log(num);
+}
+console.log(array[3])
