@@ -1,5 +1,30 @@
 h1{
-  color: red;
+  color: rgb(255, 0, 123);
   text-align: center;
   font-size: 3rem;
+}
+.slider {
+ width: 500px;
+ height: 250px;
+}
+.slider__container {
+  width: 100%;
+  height: 100%;
+}
+.slider__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fade {
+}
+.slider__controls {
+  padding-top: 1rem;
+  text-align: center;
+}
+.slider__nav {
+}
+.slider__nav-left {
+}
+.slider__nav-right {
 }
