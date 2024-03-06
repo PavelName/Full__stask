@@ -22,6 +22,12 @@ function nextIndex(direction) {
 }
 
 function slide(index) {
+  img.style.display = 'none';
+  setTimeout(() => {
+    img.style.display = 'block';
+  }, 0);
+  
+
   img.src = imgArr[index];
 
   updateDots(index);
