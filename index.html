@@ -14,8 +14,15 @@
       <img class="slider__image fade" src="./imajes/american-football.jpg" alt="slider-picture">
     </div>
     <div class="slider__controls">
-      <button class="slider__nav slider__nav-left" onclick="slide(-1)">&lt;</button>
-      <button class="slider__nav slider__nav-right" onclick="slide(1)">&gt;</button>
+      <button class="slider__nav slider__nav-left" onclick="nextIndex(-1)">&lt;</button>
+      <button class="slider__nav slider__nav-right" onclick="nextIndex(1)">&gt;</button>
+
+      <div class="slider__dots">
+        <span class="slider__dot active" onclick="changeIndex(0)"></span>
+        <span class="slider__dot" onclick="changeIndex(1)"></span>
+        <span class="slider__dot" onclick="changeIndex(2)"></span>
+        <span class="slider__dot" onclick="changeIndex(3)"></span>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
