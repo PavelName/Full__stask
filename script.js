@@ -38,3 +38,13 @@ function updateDots (index){
   }
   dots[index].classList.add('active');
 }
+
+const text = 'When \t\n you play a \t\n game of thrones you win or you die.';
+
+
+const truncate = (text, length) => {
+ const textSlice = text.slice(0, length);
+  return `${textSlice}...`;
+  ;
+};
+console.log(truncate('Helloyt', 5));
