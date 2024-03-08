@@ -59,5 +59,9 @@ h1 {
 
 .slider__dot.active,
 .slider__dot:hover {
-  background-color: chartreuse;
+  background-color: rgb(0, 68, 255);
+}
+
+.modal {
+  margin-top: 100px;
 }/*# sourceMappingURL=index.css.map */
