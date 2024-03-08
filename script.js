@@ -48,3 +48,8 @@ const truncate = (text, length) => {
   ;
 };
 console.log(truncate('Helloyt', 5));
+
+// modal window
+
+const btn = document.getElementById('open-modal');
+console.log(btn);
