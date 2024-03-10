@@ -52,4 +52,33 @@ console.log(truncate('Helloyt', 5));
 // modal window
 
 const btn = document.getElementById('open-modal');
-console.log(btn);
+const modal = document.getElementById('modal');
+const clodeBtn = document.querySelector('.modal__close');
+
+btn.onclick = () => {
+  modal.classList.add('modal_active');
+
+  clodeBtn.addEventListener('click', cloceModal);
+
+  modal.addEventListener('click', hideModal)
+
+  function cloceModal() {
+    modal.classList.remove('modal_active');
+    clodeBtn.removeEventListener('click', cloceModal);
+    modal.removeEventListener('click', hideModal);
+  }
+
+  function hideModal(event) {
+    if(event.target === modal){
+      cloceModal();
+    }
+  }
+}
+// training js.
+
+const getHiddenCard = (numb, star = 4) => {
+  let sliceNumb = numb.slice(-4);
+  let quanStar = '*'.repeat(star)
+  return `${sliceNumb}${quanStar}`;
+};
+console.log(getHiddenCard('12345678911145', 5))

@@ -67,7 +67,7 @@ h1{
 .modal-section {
 }
 .modal {
-  //display: none;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -84,6 +84,11 @@ h1{
  border: 1px solid #ccc;
  margin: 15% auto 0;
 box-shadow: 0.4px 8px 0 rgba(0, 0, 0, 0.2), 0.6;
+
+// animatiopn
+position: relative;
+animation-name: animatetop;
+animation-duration: 0.4s;
 }
 .modal__close {
   color: #aaa;
