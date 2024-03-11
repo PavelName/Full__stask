@@ -76,8 +76,28 @@ btn.onclick = () => {
 };
 
 
+// write javascript code for Tabs
 
+const tabsHead = document.querySelectorAll('.tab__head-item');
+const contents = document.querySelectorAll('.tab__content-item');
 
+tabsHead.forEach((tab, index) => {
+tab.onclick = () => {
+  changeTab(index);
+};
+});
+
+function changeTab(index) {
+  for(let tab of tabsHead){
+    tab.classList.remove('active');
+  }
+  tabsHead[index].classList.add('active');
+
+  for(let elem of contents) {
+    elem.classList.remove('active');
+  }
+  contents[index].classList.add('active');
+}
 
 // training js.
 
