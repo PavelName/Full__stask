@@ -73,22 +73,27 @@ btn.onclick = () => {
       cloceModal();
     }
   }
-}
+};
+
+
+
+
+
 // training js.
 
-const getHiddenCard = (numb, star = 4) => {
-  let sliceNumb = numb.slice(-4);
-  let quanStar = '*'.repeat(star)
-  return `${sliceNumb}${quanStar}`;
-};
-console.log(getHiddenCard('12345678911145', 5));
+// const getHiddenCard = (numb, star = 4) => {
+//   let sliceNumb = numb.slice(-4);
+//   let quanStar = '*'.repeat(star)
+//   return `${sliceNumb}${quanStar}`;
+// };
+// console.log(getHiddenCard('12345678911145', 5));
 
 
-const  capitalize = (str) => {
-  let strSlice = str[0].toUpperCase() + str.slice(1);
-  return strSlice;
-}
-console.log(capitalize('dartgh'));
+// const  capitalize = (str) => {
+//   let strSlice = str[0].toUpperCase() + str.slice(1);
+//   return strSlice;
+// }
+// console.log(capitalize('dartgh'));
 
 // const  capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 // console.log(capitalize('artgh'));
