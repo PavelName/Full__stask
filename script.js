@@ -89,15 +89,16 @@ tab.onclick = () => {
 
 function changeTab(index) {
   for(let tab of tabsHead){
-    tab.classList.remove('active');
+    setActiveClass(tabsHead, index);
+    setActiveClass(contents, index);
   }
-  tabsHead[index].classList.add('active');
 
-  for(let elem of contents) {
+function setActiveClass (arr, index) {
+  for(let elem of arr){
     elem.classList.remove('active');
   }
-  contents[index].classList.add('active');
-}
+  arr[index].classList.add('active');
+}}
 
 // training js.
 
