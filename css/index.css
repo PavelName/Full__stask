@@ -167,4 +167,10 @@ h2 {
   opacity: 1;
   transform: translateX(0);
   position: static;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  border: 2px solid red;
 }/*# sourceMappingURL=index.css.map */
