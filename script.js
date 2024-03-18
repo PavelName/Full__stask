@@ -152,3 +152,15 @@ select.addEventListener('change', () => {
 
 // const  capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 // console.log(capitalize('artgh'));
+
+const normalizeUrl = (url) => {
+  const urlStart = 'https://';
+  if (url.startsWith(urlStart)) {
+    return url;
+  } else {
+    return `${urlStart}`;
+  }
+};
+
+console.log(normalizeUrl());
+console.log('hyff');
