@@ -153,14 +153,33 @@ select.addEventListener('change', () => {
 // const  capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 // console.log(capitalize('artgh'));
 
-const normalizeUrl = (url) => {
-  const urlStart = 'https://';
-  if (url.startsWith(urlStart)) {
-    return url;
-  } else {
-    return `${urlStart}`;
-  }
-};
+// const normalizeUrl = (url) => {
+//   const urlStart = 'https://';
+//   if (url.startsWith(urlStart)) {
+//     return url;
+//   } else {
+//     return `${urlStart}`;
+//   }
+// };
 
-console.log(normalizeUrl());
-console.log('hyff');
+// console.log(normalizeUrl());
+// console.log('hyff');
+
+function getNumberExplanation(numb) {
+
+  let writeNunb;
+
+  switch (numb) {
+    case 1: 
+      writeNunb = "devil number";
+    case 2:
+      writeNunb = "answer for everything";
+    case 3:
+      writeNunb ="prime number";
+    default: 
+      writeNunb = "just a number";
+  }
+  return writeNunb;
+};
+console.log('hi');
+console.log(getNumberExplanation());
