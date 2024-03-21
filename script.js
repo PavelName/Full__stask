@@ -165,21 +165,14 @@ select.addEventListener('change', () => {
 // console.log(normalizeUrl());
 // console.log('hyff');
 
-function getNumberExplanation(numb) {
-
-  let writeNunb;
-
-  switch (numb) {
-    case 1: 
-      writeNunb = "devil number";
-    case 2:
-      writeNunb = "answer for everything";
-    case 3:
-      writeNunb ="prime number";
-    default: 
-      writeNunb = "just a number";
+function vowelSearch (word) {
+  const vowel = 'aeiouyAEIOUY';
+  const arr = [];
+  for (let i = 0; i < word.length; i++){
+    if(vowel.includes(word[i])){
+      arr.push(i + 1)
+    }
   }
-  return writeNunb;
-};
-console.log('hi');
-console.log(getNumberExplanation());
+  return arr
+}
+console.log(vowelSearch('hello world'));
