@@ -165,14 +165,3 @@ select.addEventListener('change', () => {
 // console.log(normalizeUrl());
 // console.log('hyff');
 
-function vowelSearch (word) {
-  const vowel = 'aeiouyAEIOUY';
-  const arr = [];
-  for (let i = 0; i < word.length; i++){
-    if(vowel.includes(word[i])){
-      arr.push(i + 1)
-    }
-  }
-  return arr
-}
-console.log(vowelSearch('hello world'));
